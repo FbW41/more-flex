@@ -1,0 +1,65 @@
+body {
+  background-color: #eee;
+  margin: 0;
+}
+
+nav {
+  /* border: 1px solid red; */
+  height: 80px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  /* border: 1px solid black; */
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+nav a:hover {
+  background: #0b918a;
+  color: white;
+}
+
+.active {
+  border-bottom: 5px solid #0b918a;
+  padding-top: 10px;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+main {
+  /* border: 1px solid black; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 88vh;
+}
+
+@media screen and (max-width: 575px) {
+  nav {
+    /* display: none; */
+    flex-direction: column;
+    height: 100%;
+  }
+}
